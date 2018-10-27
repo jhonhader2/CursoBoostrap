@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <title>Plantilla</title>
+    <title>Reordenamiento de Columas</title>
     <style>
         .row{
             background: #e8e8e8;
@@ -16,27 +16,17 @@
             background: #f2f2f2;
             text-align: center;
             padding: 10px;
-            border: 1px solid #4f5061;
+            border: 1px solid #4d5061;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="container">
-            <div class="row">
-                <!-- Offset-x Se usa para crer un tamaño antes de la columna -->
-                <div class="columna col-auto offset-1">Columna</div>
-            </div>
-            <div class="row">
-                <div class="columna col-4 offset-4">Columna</div>
-            </div>
-            <div class="row">
-                <div class="columna col-auto offset-1">Columna</div>
-                <div class="columna col-auto offset-5">Columna</div>
-            </div>
-            <div class="row">
-                <div class="columna col-4 offset-1 offset-md-4 offset-lg-0">Columna</div>
-            </div>
+        <div class="row justify-content-between">
+            <div class="columna col-2 order-4 order-md-1">Columna 1</div>
+            <div class="columna col-2 order-3 order-md-2">Columna 2</div>
+            <div class="columna col-2 order-2 order-md-3">Columna 3</div>
+            <div class="columna col-2 order-1 order-md-4">Columna 4</div>
         </div>
     </div>
     <script src="../js/jquery-3.3.1.min.js"></script>
